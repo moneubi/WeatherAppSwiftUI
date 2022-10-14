@@ -2,16 +2,17 @@
 //  WeatherAppSwiftUIApp.swift
 //  WeatherAppSwiftUI
 //
-//  Created by Mohammad Azam on 3/5/21.
+//  Created by MBAYE Libasse on 14/10/22.
 //
 
 import SwiftUI
 
 @main
 struct WeatherAppSwiftUIApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WeatherListScreen().environmentObject(Store())
         }
     }
 }
